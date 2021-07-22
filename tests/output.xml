@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210721 22:15:51.880" rpa="false" schemaversion="2">
+<suite id="s1" name="Cesar-Tests" source="C:\prova\cesar-automation\tests\cesar-tests.robot">
+<test id="s1-t1" name="Scenario 1: Open the Cesar page">
+<kw name="Given the user is in 'Cesar School' page" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user is in 'Cesar School' page" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210721 22:15:52.194" level="INFO">Opening browser 'chrome' to base url 'https://www.cesar.school/'.</msg>
+<status status="PASS" starttime="20210721 22:15:52.194" endtime="20210721 22:16:04.938"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210721 22:16:04.938" endtime="20210721 22:16:05.162"/>
+</kw>
+<status status="PASS" starttime="20210721 22:15:52.193" endtime="20210721 22:16:05.163"/>
+</kw>
+<status status="PASS" starttime="20210721 22:15:52.193" endtime="20210721 22:16:05.164"/>
+</kw>
+<status status="PASS" starttime="20210721 22:15:52.191" endtime="20210721 22:16:05.164"/>
+</kw>
+<kw name="And the user click in 'Accept' button on Cookies pop-up" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user click in 'Accept' button on Cookies pop-up" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${YES_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210721 22:16:05.173" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/a[2]'.</msg>
+<status status="PASS" starttime="20210721 22:16:05.172" endtime="20210721 22:16:05.328"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.171" endtime="20210721 22:16:05.328"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.171" endtime="20210721 22:16:05.328"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.169" endtime="20210721 22:16:05.329"/>
+</kw>
+<kw name="And the user click in 'School' tab" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user click in 'School' tab" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${URL_SCHOOL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210721 22:16:05.335" level="INFO">Clicking element '//*[@id="menu-item-15376"]'.</msg>
+<status status="PASS" starttime="20210721 22:16:05.335" endtime="20210721 22:16:08.644"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.334" endtime="20210721 22:16:08.645"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.334" endtime="20210721 22:16:08.645"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:05.333" endtime="20210721 22:16:08.645"/>
+</kw>
+<kw name="And the user click in 'Blog' tab" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user click in 'Blog' tab" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${BLOG_TAB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210721 22:16:08.646" level="INFO">Clicking element 'xpath=//a[contains(text(),'Blog')]'.</msg>
+<status status="PASS" starttime="20210721 22:16:08.646" endtime="20210721 22:16:13.143"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:08.646" endtime="20210721 22:16:13.144"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:08.645" endtime="20210721 22:16:13.144"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:08.645" endtime="20210721 22:16:13.144"/>
+</kw>
+<kw name="When the user 'scroll' to end the page" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user 'scroll' to end the page" library="keywords">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,9000);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210721 22:16:13.147" level="INFO">Executing JavaScript:
+window.scrollBy(0,9000);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210721 22:16:13.147" endtime="20210721 22:16:13.152"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:13.146" endtime="20210721 22:16:13.152"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:13.146" endtime="20210721 22:16:13.152"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:13.145" endtime="20210721 22:16:13.153"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210721 22:16:17.163" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210721 22:16:13.156" endtime="20210721 22:16:17.163"/>
+</kw>
+<kw name="When the user go to 'second' page" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user go to 'second' page" library="keywords">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${SECOND_PAGE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210721 22:16:17.164" level="INFO">Clicking element '//*[@id="primary"]/div/nav/div/a[1]'.</msg>
+<status status="PASS" starttime="20210721 22:16:17.164" endtime="20210721 22:16:19.999"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:17.164" endtime="20210721 22:16:19.999"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:17.164" endtime="20210721 22:16:19.999"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:17.163" endtime="20210721 22:16:19.999"/>
+</kw>
+<status status="PASS" starttime="20210721 22:15:52.189" endtime="20210721 22:16:19.999"/>
+</test>
+<test id="s1-t2" name="Scenario 2: Second article - Title is shown">
+<kw name="Given the 'second article' is visible" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'second article' is visible" library="keywords">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<arg>${SECOND_ARTICLE}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210721 22:16:20.001" endtime="20210721 22:16:20.030"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.001" endtime="20210721 22:16:20.030"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.001" endtime="20210721 22:16:20.030"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.001" endtime="20210721 22:16:20.031"/>
+</kw>
+<kw name="And execute Scroll page" library="bdd" sourcename="And ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="Execute Scroll page" library="keywords">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,980);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210721 22:16:20.034" level="INFO">Executing JavaScript:
+window.scrollBy(0,980);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210721 22:16:20.033" endtime="20210721 22:16:20.052"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.033" endtime="20210721 22:16:20.052"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.032" endtime="20210721 22:16:20.052"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.032" endtime="20210721 22:16:20.053"/>
+</kw>
+<kw name="When the 'title' is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'title' is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${BODY_ARTICLE}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.098" level="INFO">Element '//*[@id="post-28424"]/div/div/header' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.054" endtime="20210721 22:16:20.098"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${XPATH_TITLE}</arg>
+<arg>${TITLE_ARTICLE}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.099" level="INFO">Verifying element '//*[@id="post-28424"]/div/div/header/h2/a' contains exact text 'CESAR Summer Job dá boas-vindas aos selecionados entre mais de mil inscritos'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.098" endtime="20210721 22:16:20.120"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.054" endtime="20210721 22:16:20.120"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.053" endtime="20210721 22:16:20.120"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.053" endtime="20210721 22:16:20.120"/>
+</kw>
+<kw name="Then the title 'shown' in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The title 'shown' in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nTítulo do segundo post: ${TITLE_ARTICLE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.122" endtime="20210721 22:16:20.123"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.122" endtime="20210721 22:16:20.123"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.121" endtime="20210721 22:16:20.123"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.121" endtime="20210721 22:16:20.123"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.000" endtime="20210721 22:16:20.123"/>
+</test>
+<test id="s1-t3" name="Scenario 3: Second article - Date is shown">
+<kw name="Given the 'second article' is visible" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'second article' is visible" library="keywords">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<arg>${SECOND_ARTICLE}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210721 22:16:20.126" endtime="20210721 22:16:20.142"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.125" endtime="20210721 22:16:20.142"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.125" endtime="20210721 22:16:20.142"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.125" endtime="20210721 22:16:20.143"/>
+</kw>
+<kw name="When the 'date' is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'date' is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${DATE_SPACE}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.168" level="INFO">Element '//*[@id="post-28424"]/div/div/div[1]/a/div/span' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.146" endtime="20210721 22:16:20.168"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_DAY}</arg>
+<arg>5</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.188" level="INFO">Element '//*[@id="post-28424"]/div/div/div[1]/a/div/span/time[1]/span[2]' contains text '5'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.168" endtime="20210721 22:16:20.189"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_MONTH}</arg>
+<arg>jul</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.206" level="INFO">Element '//*[@id="post-28424"]/div/div/div[1]/a/div/span/time[1]/span[1]' contains text 'jul'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.189" endtime="20210721 22:16:20.206"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_YEAR}</arg>
+<arg>2021</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.225" level="INFO">Element '//*[@id="post-28424"]/div/div/div[1]/a/div/span/time[1]/span[3]' contains text '2021'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.206" endtime="20210721 22:16:20.225"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.145" endtime="20210721 22:16:20.226"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.144" endtime="20210721 22:16:20.226"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.143" endtime="20210721 22:16:20.226"/>
+</kw>
+<kw name="Then the date 'shown' in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The date 'shown' in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nData do segundo post: jul 5 2021</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.230" endtime="20210721 22:16:20.230"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.229" endtime="20210721 22:16:20.230"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.229" endtime="20210721 22:16:20.230"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.228" endtime="20210721 22:16:20.230"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.124" endtime="20210721 22:16:20.231"/>
+</test>
+<test id="s1-t4" name="Scenario 4: Third article - Title is shown">
+<kw name="Execute Scroll page" library="keywords">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,980);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210721 22:16:20.233" level="INFO">Executing JavaScript:
+window.scrollBy(0,980);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210721 22:16:20.232" endtime="20210721 22:16:20.236"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.232" endtime="20210721 22:16:20.236"/>
+</kw>
+<kw name="Given the 'third article' is visible" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'third article' is visible" library="keywords">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<arg>${THIRD_ARTICLE3}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210721 22:16:20.237" endtime="20210721 22:16:20.258"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.237" endtime="20210721 22:16:20.258"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.237" endtime="20210721 22:16:20.258"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.236" endtime="20210721 22:16:20.258"/>
+</kw>
+<kw name="When the 'third title' is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'third title' is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${THIRD_ARTICLE3}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.300" level="INFO">Element '//*[@id="post-27337"]/div/div/header' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.260" endtime="20210721 22:16:20.301"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${XPATH_TITLE3}</arg>
+<arg>${TITLE_ARTICLE3}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.301" level="INFO">Verifying element '//*[@id="post-27337"]/div/div/header/h2/a' contains exact text 'Projetos do Mestrado em Engenharia de Software trazem solução a casos complexos'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.301" endtime="20210721 22:16:20.318"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.260" endtime="20210721 22:16:20.318"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.259" endtime="20210721 22:16:20.318"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.259" endtime="20210721 22:16:20.319"/>
+</kw>
+<kw name="Then the title 'shown' in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The title 'shown' in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nTítulo do segundo post: ${TITLE_ARTICLE}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.320" endtime="20210721 22:16:20.320"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.319" endtime="20210721 22:16:20.320"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.319" endtime="20210721 22:16:20.320"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.319" endtime="20210721 22:16:20.320"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.231" endtime="20210721 22:16:20.321"/>
+</test>
+<test id="s1-t5" name="Scenario 5: Third article - Date is shown">
+<kw name="Given the 'third article' is visible" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'third article' is visible" library="keywords">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<arg>${THIRD_ARTICLE3}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210721 22:16:20.324" endtime="20210721 22:16:20.337"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.322" endtime="20210721 22:16:20.338"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.322" endtime="20210721 22:16:20.338"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.322" endtime="20210721 22:16:20.338"/>
+</kw>
+<kw name="When the 'date of third' is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'date of third' is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${DATE_SPACE3}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.357" level="INFO">Element '//*[@id="post-27337"]/div/div/div[1]/a/div/span' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.340" endtime="20210721 22:16:20.357"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_DAY3}</arg>
+<arg>30</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.380" level="INFO">Element '//*[@id="post-27337"]/div/div/div[1]/a/div/span/time[1]/span[2]' contains text '30'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.357" endtime="20210721 22:16:20.380"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_MONTH3}</arg>
+<arg>jun</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.402" level="INFO">Element '//*[@id="post-27337"]/div/div/div[1]/a/div/span/time[1]/span[1]' contains text 'jun'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.380" endtime="20210721 22:16:20.402"/>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<arg>${XPATH_DATE_YEAR3}</arg>
+<arg>2021</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.422" level="INFO">Element '//*[@id="post-27337"]/div/div/div[1]/a/div/span/time[1]/span[3]' contains text '2021'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.402" endtime="20210721 22:16:20.422"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.339" endtime="20210721 22:16:20.422"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.338" endtime="20210721 22:16:20.422"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.338" endtime="20210721 22:16:20.423"/>
+</kw>
+<kw name="Then the third date 'shown' in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The third date 'shown' in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nData do terceiro post: jun 30 2021</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.424" endtime="20210721 22:16:20.425"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.423" endtime="20210721 22:16:20.425"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.423" endtime="20210721 22:16:20.425"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.423" endtime="20210721 22:16:20.425"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.321" endtime="20210721 22:16:20.425"/>
+</test>
+<test id="s1-t6" name="Scenario 5: Third article - Autor is shown">
+<kw name="Given the 'third article' is visible" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'third article' is visible" library="keywords">
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<arg>${THIRD_ARTICLE3}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20210721 22:16:20.430" endtime="20210721 22:16:20.441"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.430" endtime="20210721 22:16:20.442"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.430" endtime="20210721 22:16:20.442"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.428" endtime="20210721 22:16:20.442"/>
+</kw>
+<kw name="When the 'Autor' name is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'Autor' name is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${DATE_SPACE3}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.457" level="INFO">Element '//*[@id="post-27337"]/div/div/div[1]/a/div/span' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.443" endtime="20210721 22:16:20.457"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${XPATH_TITLE4}</arg>
+<arg>${TITLE_ARTICLE4}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.458" level="INFO">Verifying element '//*[@id="post-27337"]/div/div/header/div/span[2]/a/span' contains exact text 'Comunicação School'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.457" endtime="20210721 22:16:20.481"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.443" endtime="20210721 22:16:20.481"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.442" endtime="20210721 22:16:20.481"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.442" endtime="20210721 22:16:20.481"/>
+</kw>
+<kw name="Then the 'Autor' name shown in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'Autor' name shown in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nAutor do terceiro: Comunicação School</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.482" endtime="20210721 22:16:20.483"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.482" endtime="20210721 22:16:20.484"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.482" endtime="20210721 22:16:20.484"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.481" endtime="20210721 22:16:20.484"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.426" endtime="20210721 22:16:20.484"/>
+</test>
+<test id="s1-t7" name="Scenario 6: Print the 'Cesar School' address">
+<kw name="Given the user execute the 'scroll' page to end" library="bdd" sourcename="Given ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The user execute the 'scroll' page to end" library="keywords">
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>window.scrollBy(0,6600);</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210721 22:16:20.488" level="INFO">Executing JavaScript:
+window.scrollBy(0,6600);
+Without any arguments.</msg>
+<status status="PASS" starttime="20210721 22:16:20.488" endtime="20210721 22:16:20.491"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.488" endtime="20210721 22:16:20.492"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.487" endtime="20210721 22:16:20.493"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.487" endtime="20210721 22:16:20.493"/>
+</kw>
+<kw name="When the 'Cesar School' address is visible" library="bdd" sourcename="When ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'Cesar School' address is visible" library="keywords">
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<arg>${INFORMATIONS_DATA}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20210721 22:16:20.527" level="INFO">Element '//*[@id="colophon"]/div[1]/div/div/div/div[1]' is displayed.</msg>
+<status status="PASS" starttime="20210721 22:16:20.494" endtime="20210721 22:16:20.527"/>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<arg>${EMAIL_TAB}</arg>
+<arg>${EMAIL}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20210721 22:16:20.529" level="INFO">Verifying element '//*[@id="text-3"]/div/div/p[2]' contains exact text 'contato@cesar.school'.</msg>
+<status status="PASS" starttime="20210721 22:16:20.528" endtime="20210721 22:16:20.553"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.493" endtime="20210721 22:16:20.553"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.493" endtime="20210721 22:16:20.553"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.493" endtime="20210721 22:16:20.553"/>
+</kw>
+<kw name="Then the 'Cesar school' address shown in the console" library="bdd" sourcename="Then ${keyword}">
+<kw name="Run Keyword" library="BuiltIn">
+<arg>${keyword}</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<kw name="The 'Cesar school' address shown in the console" library="keywords">
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nEndereço do School: contato@cesar.school</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210721 22:16:20.555" endtime="20210721 22:16:20.555"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.554" endtime="20210721 22:16:20.555"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.554" endtime="20210721 22:16:20.555"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.554" endtime="20210721 22:16:20.555"/>
+</kw>
+<status status="PASS" starttime="20210721 22:16:20.486" endtime="20210721 22:16:20.556"/>
+</test>
+<status status="PASS" starttime="20210721 22:15:51.884" endtime="20210721 22:16:20.556"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Cesar-Tests">Cesar-Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
